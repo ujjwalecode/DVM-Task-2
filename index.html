@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myscript.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>DVM MERCHANDISE SIGNINGS</h1>
+    </header>
+    <div class="container">
+        <form onsubmit="submitForm(event)">
+            <span>Name</span><input id="name" required placeholder="Enter Your Name" type="text"/>
+            <span>Email</span><input id="email" required placeholder="Enter Your Email ID" type="email"/>
+            <span>Phone Number</span><input id="phone" required placeholder="Enter Your Phone Number" type="text" pattern="[0-9]{10}" maxlength="10"/> 
+            <span>BITS ID</span><input id="bitsid" required placeholder="Enter Your Bits ID" type="text" pattern="^\d{4}[A-Z]\d{1}[A-Z]{2}\d{4}[A-Z]$" title="BITS ID should be of the type 2023XXPSXXXP"/> 
+            <label class="hostel" for="hostel">Hostel</label>
+            <select name="hostel" id="hostel" required>
+                <option class="option" value="Disabled selected">Select your Hostel</option>
+                <option value="GANDHI">GANDHI</option>
+                <option value="KRISHNA">KRISHNA</option>
+                <option value="VISHWAKARMA">VISHWAKARMA</option>
+                <option value="VYAS">VYAS</option>  
+                <option value="SHANKAR">SHANKAR</option>
+                <option value="MEERA">MEERA</option>
+                <option value="BUDH">BUDH</option>
+                <option value="MALVIYA">MALVIYA</option>
+                <option value="RAM">RAM</option>
+                <input id="roomnumber" type="text" name="roomnumber" placeholder="Enter Your Room No.">
+
+            </select>
+            <label class="size">Select Your Size:</label>
+            <label class="diffsize"><input type="radio" name="size" value="small" required> Small</label>
+            <label class="diffsize"><input type="radio" name="size" value="medium" required> Medium</label>
+            <label class="diffsize"><input type="radio" name="size" value="large" required> Large</label>
+            <label class="diffsize"><input type="radio" name="size" value="X-large" required> X-Large</label>
+            <label class="diffsize"><input type="radio" name="size" value="XX-large" required> XX-Large</label>
+            
+            
+            <div class="Terms">
+                <label><input id="terms" class="terms" type="checkbox" id="terms" name="terms" required> I agree to the terms and conditions</label>
+            </div>
+    
+    
+            <div class="button">
+                <button class="btn" type="submit">Submit</button>
+                <button class="btn" type="reset">Reset</button>
+            </div>
+        </form> 
+    </div>
+    
+</body>
+</html> 
